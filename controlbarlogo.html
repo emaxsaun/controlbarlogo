@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Controlbarlogo</title>
+</head>
+<body>
+<script type="text/javascript" src="http://p.jwpcdn.com/6/8/jwplayer.js"></script>
+<div id="player"></div>
+<script type="text/javascript">
+jwplayer("player").setup({
+	playlist: [{
+	captions: [{
+      file: 'http://www.longtailvideo.com/sites/default/files/jw6-captions.vtt',
+      label: 'English'
+    },
+	],
+    image: "http://content.bitsontherun.com/thumbs/i8oQD9zd-640.jpg",
+    sources: [{
+      file: "http://content.bitsontherun.com/videos/i8oQD9zd-kNspJqnJ.mp4",
+      label: "SD"
+    },{
+      file: "http://content.bitsontherun.com/videos/i8oQD9zd-DZ7jSYgM.mp4",
+      label: "HD"
+    }]
+  }],
+	skin: "ethan.xml",
+	primary: "flash",
+	stretching: "exactfit",
+	width: 720,
+	height: 480,
+	plugins: {
+		'controlbarlogo.js': {
+			link:'http://www.ethanfeldman.net/',
+			target: '_blank',
+			width: '70px',
+			height: '20px',
+			left: '634px'
+			//border: '1px solid #000'
+		}
+	}
+});
+</script>
+</body>
+</html>
